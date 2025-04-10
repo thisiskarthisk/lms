@@ -12,7 +12,6 @@
     --lightgray: #FFF7F3 !important;
     --lightprimary: #ad779f !important;
 
-
     /* mani content colour */
     --black: #000000 !important;
 } 
@@ -27,7 +26,8 @@ body {
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
     overflow-x: hidden;
-    background-color:var(--white)
+    /* background-color:var(--white) */
+    background-color: #f5f6f8 !important;
 }
 
 
@@ -123,7 +123,6 @@ i.icon.fa.fa-ellipsis-v.fa-fw {
 i.icon.fa.fa-search.fa-fw{
     color: var(--icon-color) !important;
 }
-
 
 
 /* ------------------------------------------------------------------------------- */
@@ -572,12 +571,15 @@ h3{
 .available-courses .available-block .course-slider .slick-slide .available-content .available-info {
     width: 100%;
     height: 110px !important;
-    background: #ece7e7;
+    /* background: #ece7e7; */
+    background-color: whitesmoke !important;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 0 20px 5px 20px;
     display: flex;
     align-items: center;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .available-courses .available-block .course-slider .slick-slide .available-content .available-info h6 a{
@@ -1000,7 +1002,7 @@ button.btn.btn-link{
 
 
 /* sub Icon colour */
-
+/* 
 .slider-video {
     position: absolute;
     width: 100%;
@@ -1019,7 +1021,7 @@ button.btn.btn-link{
     transform: translate(-50%, -50%);
     filter: blur(15px);
     opacity: 0.7;
-}
+} */
 
 
 /* media query */
@@ -1388,7 +1390,8 @@ button.btn.btn-link{
 .course-details-frontpage {
     height: 30%;
     padding: 10px;
-    background: #f0f0f0;
+    /* background: #f0f0f0; */
+    background-color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1654,7 +1657,7 @@ span.dir-rtl-hide > .icon.fa.fa-chevron-right.fa-fw{
 
 
 .dropdown-menu .dropdown-item i {
-    color: var(--primary) !important; /* Replace with your desired color */
+    color: var(--primary) !important;
 }
 
 
@@ -1668,9 +1671,42 @@ span.dir-rtl-hide > .icon.fa.fa-chevron-right.fa-fw{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
+    /* padding: 1.1rem !important; */
 }
 
 .course-card:hover {
     transform: translateY(-8px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+
+#id_usertype {
+    margin-top: 10px;
+}
+
+#id_usertype input {
+    margin-right: 5px;
+}
+
+
+.custom-select{
+    width:auto;
+    min-width: 400px !important;
+}
+
+
+
+
+
+
+.block .card-body .content:not(.activityiconcontainer){
+    background: var(--white) !important;
+}
+
+#page.drawers .block_myoverview{
+    border: none !important;
+}
+
+
+
